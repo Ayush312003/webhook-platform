@@ -1,26 +1,31 @@
 Steps to run the project:
 
 1) Spin up Docker
-2) docker compose up
+ ```
+docker compose up
+```
 
    New terminal tab
-1) cd backend
-2) npm i
-3) npm start
+   ```
+    cd backend
+    npm i
+    npm start
+```
 
    New terminal tab
-1) cd frontend
-2) npm i
-3) npm run dev
+```
+ cd frontend
+ npm i
+ npm run dev
+```
 
-
-# 🚀 Webhook Delivery Platform
+#  Webhook Delivery Platform
 
 A scalable webhook delivery system designed to reliably send events to external services with retry mechanisms, failure handling, and monitoring.
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 This project simulates a production-grade webhook system (similar to Stripe/Razorpay) where events are delivered to registered endpoints with guaranteed reliability.
 
@@ -32,7 +37,7 @@ It focuses on:
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 - Node.js
 - Express.js
@@ -90,11 +95,19 @@ It focuses on:
 
 ##  API Endpoints
 
-### Create Webhook
+### POST /api/webhooks
+Registers a new webhook.
 
 
-### Trigger Event
+### GET /api/webhooks
+Lists registered webhooks.
 
 
-### Retry Failed Delivery
+### POST /api/events
+Triggers a new event.
+
+### GET /api/deliveries
+Fetches the log of delivery attempts.
+
+###
 
